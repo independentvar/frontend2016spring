@@ -1,15 +1,16 @@
 (function(){
 	"use strict";
 
-	answer = 0;
-  
-    document.querySelector(".calc").onclick = function(e) {
-      var answer += 42;
-      getAnswer();
+    var answer = 0,
+        answerContainer = document.querySelector(".answer"),
+        calculateBtn = document.querySelector(".calc");
+
+    function getAnswer() {
+        answerContainer.innerHTML = answer.toString();
+    }
+
+    calculateBtn.onclick = function(e) {
+        answer += 42;
+        getAnswer();
     };
-
 })();
-
-function getAnswer() {
-    document.querySelector(".answer").innerHTML = answer;
-}
