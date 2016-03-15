@@ -6,11 +6,16 @@
   border: 1px;
 }
 
-#box {
+.box {
+  background-color: #000;
   width: 200px;
   height: 100px;
   position: absolute;
   left: 200px;
-  top: 100;
+  top: 100px;
   border: 1px #ccc dotted;
+}
+
+.warning {
+  background-color: red;
 }
