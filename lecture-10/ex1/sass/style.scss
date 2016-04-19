@@ -1,0 +1,48 @@
+@import "_reset.scss";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin button($color){
+    background-color: $color;
+        
+        &:hover{
+            background-color: darken($color: $color, $amount: 10);
+        }
+        
+        &:active {
+            background-color: lighten($color: $color, $amount: 10);
+        }
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.4em;
+    padding: 1em 1.5em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', cursive;
+    
+    &.btn-primary {
+        @include button(dodgerblue);
+    }
+    
+    &.btn-success {
+        @include button(mediumseagreen);
+    }
+}
