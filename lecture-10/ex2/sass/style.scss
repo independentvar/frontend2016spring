@@ -1,0 +1,50 @@
+@import "_reset.scss";
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+$cols: 12;
+
+.col {
+    border: 1px solid black;
+    background-color: lightseagreen;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    @extend .col;
+    width: ((100% / $cols) * $i);
+  }
+}
+
+
+@for $i from 1 through 12 {
+  .col-g-#{$i} {
+    @extend .col;
+    margin-right: 1%;
+    width: ((100% / $cols) * $i) - ((($cols / $i) - 1) / $cols * $i);
+    
+    &:last-child {
+        margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+    @for $i from 1 through $cols {
+        .col-#{$i}, .col-g-#{$i} {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}

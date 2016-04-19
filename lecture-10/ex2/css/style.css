@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-g-1, .col-g-2, .col-g-3, .col-g-4, .col-g-5, .col-g-6, .col-g-7, .col-g-8, .col-g-9, .col-g-10, .col-g-11, .col-g-12 {
+  border: 1px solid black;
+  background-color: lightseagreen;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-g-1 {
+  margin-right: 1%;
+  width: 7.41667%; }
+  .col-g-1:last-child {
+    margin-right: 0; }
+
+.col-g-2 {
+  margin-right: 1%;
+  width: 15.83333%; }
+  .col-g-2:last-child {
+    margin-right: 0; }
+
+.col-g-3 {
+  margin-right: 1%;
+  width: 24.25%; }
+  .col-g-3:last-child {
+    margin-right: 0; }
+
+.col-g-4 {
+  margin-right: 1%;
+  width: 32.66667%; }
+  .col-g-4:last-child {
+    margin-right: 0; }
+
+.col-g-5 {
+  margin-right: 1%;
+  width: 41.08333%; }
+  .col-g-5:last-child {
+    margin-right: 0; }
+
+.col-g-6 {
+  margin-right: 1%;
+  width: 49.5%; }
+  .col-g-6:last-child {
+    margin-right: 0; }
+
+.col-g-7 {
+  margin-right: 1%;
+  width: 57.91667%; }
+  .col-g-7:last-child {
+    margin-right: 0; }
+
+.col-g-8 {
+  margin-right: 1%;
+  width: 66.33333%; }
+  .col-g-8:last-child {
+    margin-right: 0; }
+
+.col-g-9 {
+  margin-right: 1%;
+  width: 74.75%; }
+  .col-g-9:last-child {
+    margin-right: 0; }
+
+.col-g-10 {
+  margin-right: 1%;
+  width: 83.16667%; }
+  .col-g-10:last-child {
+    margin-right: 0; }
+
+.col-g-11 {
+  margin-right: 1%;
+  width: 91.58333%; }
+  .col-g-11:last-child {
+    margin-right: 0; }
+
+.col-g-12 {
+  margin-right: 1%;
+  width: 100%; }
+  .col-g-12:last-child {
+    margin-right: 0; }
+
+@media (max-width: 600px) {
+  .col-1, .col-g-1 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-2, .col-g-2 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-3, .col-g-3 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-4, .col-g-4 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-5, .col-g-5 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-6, .col-g-6 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-7, .col-g-7 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-8, .col-g-8 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-9, .col-g-9 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-10, .col-g-10 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-11, .col-g-11 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .col-12, .col-g-12 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; } }
