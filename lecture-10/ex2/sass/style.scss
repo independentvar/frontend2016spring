@@ -6,6 +6,7 @@
 }
 
 $cols: 12;
+$gutter: 1%;
 
 .col {
     border: 1px solid black;
@@ -30,8 +31,8 @@ $cols: 12;
 @for $i from 1 through 12 {
   .col-g-#{$i} {
     @extend .col;
-    margin-right: 1%;
-    width: ((100% / $cols) * $i) - ((($cols / $i) - 1) / $cols * $i);
+    margin-right: $gutter;
+    width: ((100% / $cols) * $i) - ((($cols / $i) - $gutter) / $cols * $i);
     
     &:last-child {
         margin-right: 0;
